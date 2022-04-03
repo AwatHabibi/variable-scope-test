@@ -1,10 +1,11 @@
+$(document).ready(function() {
 
-function sampleFunction() {
-  localString = "This is a local variable";
-  alert(localString);
-  localString = "This is a local variable update!!";
-  alert(localString);
-}
+  $("div#click-one").click(function() {
+    const whatToSay = "Hello!";
+    alert(whatToSay);
+  });
 
-sampleFunction();
-alert(localString);
+  $("div#click-two").click(function() {
+    alert(whatToSay);
+  });
+});
